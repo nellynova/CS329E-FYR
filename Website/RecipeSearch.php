@@ -1,8 +1,9 @@
 <?php
-if (!isset($_COOKIE["email"]) && !isset($_COOKIE["psw"])) {
+if (($_COOKIE["FYR_LOGIN"])!= "true") {
     header("Location: login.html");
     exit();
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
